@@ -1,0 +1,13 @@
+.navbar {
+    background-color: #2a2a00;
+}
+#brand {
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+}
+
+#brand:hover {
+    text-shadow: darkgoldenrod 1px 1px 5px;
+}
