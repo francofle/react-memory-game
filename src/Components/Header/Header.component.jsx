@@ -4,7 +4,7 @@ import HeaderItem from "../HeaderItem/HeaderItem.component";
 
 const Header = props => {
   return (
-    <div className="navbar position-sticky">
+    <div className="navbar sticky-top">
       <div className="col-4 text-center">
         <a className="navbar-brand" id="brand" href='/'>
           Memory Game
