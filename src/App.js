@@ -57,9 +57,16 @@ class App extends React.Component {
           clickedImages: clickedImages,
           headerColor: newHeaderColor
         },
-        () => console.log(this.state)
+        () => {
+          if (this.state.currentScore === 12) {
+            alert('You Won!');
+            window.location.reload();
+          }
+        }
       );
     }
+
+
   };
 
   render() {
