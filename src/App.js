@@ -14,40 +14,38 @@ class App extends React.Component {
       isPlaying: false,
       isGuessRight: false,
       imageNamesArray: imageNamesArray,
-      clickedImages: []
+      clickedImages: [],
+      headerColor: 0
     };
   }
 
   handleCardClick = event => {
-    console.log(event.target.value);
     const clickedImageName = event.target.value;
-    if (
-      this.state.clickedImages.filter(
-        imageName => imageName === clickedImageName
-      ).length
-    ) {
-      console.log("filter statement");
+
+    if (this.state.clickedImages.includes(event.target.value)) {
+      // console.log("filter statement");
       this.setState({
         currentScore: 0,
-        isPlaying: false,
         isGuessRight: false,
         imageNamesArray: imageNamesArray,
-        clickedImages: []
+        clickedImages: [],
+        headerColor: 0
       });
     } else {
       //  add imageClicked to array:
       const clickedImages = this.state.clickedImages;
       clickedImages.push(clickedImageName);
-      console.log(clickedImages);
+      // console.log(clickedImages);
 
       //  randomize imageNamesArray
       const randomizedImageNamesArray = this.state.imageNamesArray;
       randomizedImageNamesArray.sort(() => Math.random()-0.5);
-      const newScore = this.state.score + 1;
+      const newScore = this.state.currentScore + 1;
       const topScore =
         newScore > this.state.topScore
-          ? this.state.topScore + 1
+          ? newScore
           : this.state.topScore;
+      const newHeaderColor = this.state.headerColor + 1;
 
       this.setState(
         {
@@ -56,29 +54,12 @@ class App extends React.Component {
           isPlaying: true,
           isGuessRight: true,
           imageNamesArray: randomizedImageNamesArray,
-          clickedImages: clickedImages
+          clickedImages: clickedImages,
+          headerColor: newHeaderColor
         },
         () => console.log(this.state)
       );
     }
-  };
-
-  randomizeArray = array => {
-    let currentIndex = array.length, temporaryValue, randomIndex;
-
-  //  While there remains elements to shuffle...
-    while (0 !== currentIndex) {
-      // Select a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-
-      // and swap it with current element.
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-
-    return array;
   };
 
   render() {
@@ -89,6 +70,7 @@ class App extends React.Component {
           topScore={this.state.topScore}
           isPlaying={this.state.isPlaying}
           isGuessRight={this.state.isGuessRight}
+          headerColor={this.state.headerColor}
         />
         <Jumbotron title="Click each character only once" />
         <CardCollection
