@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/react-memory-game/static/css/main.04d218cc.chunk.css",
+    "main.js": "/react-memory-game/static/js/main.a8d4f602.chunk.js",
+    "main.js.map": "/react-memory-game/static/js/main.a8d4f602.chunk.js.map",
+    "runtime-main.js": "/react-memory-game/static/js/runtime-main.b1273a96.js",
+    "runtime-main.js.map": "/react-memory-game/static/js/runtime-main.b1273a96.js.map",
+    "static/js/2.45002426.chunk.js": "/react-memory-game/static/js/2.45002426.chunk.js",
+    "static/js/2.45002426.chunk.js.map": "/react-memory-game/static/js/2.45002426.chunk.js.map",
+    "index.html": "/react-memory-game/index.html",
+    "precache-manifest.285c5a6612c17c61d29138f40c193c55.js": "/react-memory-game/precache-manifest.285c5a6612c17c61d29138f40c193c55.js",
+    "service-worker.js": "/react-memory-game/service-worker.js",
+    "static/css/main.04d218cc.chunk.css.map": "/react-memory-game/static/css/main.04d218cc.chunk.css.map",
+    "static/media/AnaBray.jpg": "/react-memory-game/static/media/AnaBray.0d622a1f.jpg",
+    "static/media/Cayde.jpeg": "/react-memory-game/static/media/Cayde.6a83c274.jpeg",
+    "static/media/Hawthorne.jpeg": "/react-memory-game/static/media/Hawthorne.ee57994f.jpeg",
+    "static/media/Holiday.jpeg": "/react-memory-game/static/media/Holiday.7c057b4d.jpeg",
+    "static/media/Ikora.jpg": "/react-memory-game/static/media/Ikora.4a931fc7.jpg",
+    "static/media/Petra.png": "/react-memory-game/static/media/Petra.768bb2c7.png",
+    "static/media/Shaxx.jpeg": "/react-memory-game/static/media/Shaxx.ff462506.jpeg",
+    "static/media/Sloane.jpeg": "/react-memory-game/static/media/Sloane.f12fb578.jpeg",
+    "static/media/Spider.png": "/react-memory-game/static/media/Spider.f07d13f5.png",
+    "static/media/Tyra.jpeg": "/react-memory-game/static/media/Tyra.e1af4777.jpeg",
+    "static/media/Xur.jpg": "/react-memory-game/static/media/Xur.00425f95.jpg",
+    "static/media/Zavala.jpeg": "/react-memory-game/static/media/Zavala.0fff6715.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1273a96.js",
+    "static/js/2.45002426.chunk.js",
+    "static/css/main.04d218cc.chunk.css",
+    "static/js/main.a8d4f602.chunk.js"
+  ]
+}
