@@ -10,7 +10,7 @@ const Card = ({imageName, handleCardClick}) => {
       <button
         className="card p-0 m-0 imageCard"
         onClick={handleCardClick}
-        style={{background: `url(${imagePath}`}}
+        style={{background: `url(${imagePath}`, backgroundSize: 'cover'}}
         value={imageName}
       >
       </button>
