@@ -12,11 +12,3 @@
     transform: scale(1.1);
   }
 }
-
-@media only screen and (max-width: 768px) {
-  .card {
-    width: 100px;
-    height: 100px;
-    min-width: 100px;
-  }
-}
