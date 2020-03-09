@@ -6,6 +6,7 @@ React Memory Game is a Single Page Game using React.  The purpose of the game is
 [Live Demo](https://react-memory-game.ajfranceschi.com/)
 
 Technologies Used:
+--
 * HTML
 * CSS
 * JavaScript
